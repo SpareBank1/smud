@@ -1,7 +1,6 @@
 import React from 'react'
 import { Grid, GridRow, GridCol } from '@sb1/ffe-grid-react'
 import Layout from '../components/layout'
-import Header from '../components/header'
 import SEO from '../components/seo'
 import Instagram from '../components/instagram';
 import RssMedium from '../components/rssMedium';
@@ -9,7 +8,6 @@ import miljo1 from '../images/sb1-miljo1.jpg';
 
 const IndexPage = (props) => (
   <Layout>
-    <Header/>
     <SEO title="SpareBank 1 [smu:d]" keywords={[`sparebank 1`, `utvikling`]} />
 
     <div className="sb1-hero sb1-curved sb1-curved--grey-warm">
