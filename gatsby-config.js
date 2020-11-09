@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/smud",
   siteMetadata: {
     title: `SpareBank 1 [smu:d]`,
     description: `.`,
