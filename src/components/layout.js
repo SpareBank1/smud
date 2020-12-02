@@ -22,7 +22,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div className="sb1-layout">
+        <div className="smud-layout">
           {children}
         </div>
       </>

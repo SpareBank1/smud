@@ -1,64 +1,120 @@
-.sb1-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  
-    @media screen and (min-width: @breakpoint-md) {
-      padding: 30px 20px;
-    }
-  
-    &--opening {
-      background: transparent;
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-    }
-  
-    &__link {
-      &--home {
-        flex-basis: 70%;
-        color: @ffe-blue-royal;
-        font-family: 'MuseoSansRounded-700', arial, sans-serif;
-        font-weight: normal;
-        font-size: 18px;
-        text-decoration: none;
+.smud-nav {
+  width: 100vw;
+  text-align: center;
+  position: fixed;
 
-        &:hover {
-            color: @ffe-blue-cobalt;
-        }
-  
-        @media screen and (min-width: @breakpoint-md) {
-          flex-basis: 50%;
-          font-size: 32px;
-        }
-      }
-    }
-  
-    &__logo {
-      height: 20px;
-      margin-bottom: @ffe-spacing-xs;
-      vertical-align: middle;
-      transition: transform @ffe-transition-duration @ffe-ease;
-  
-      @media screen and (min-width: @breakpoint-md) {
-        height: 30px;
-      }
-    }
-  
-    &__github-logo {
-      height: 30px;
-      max-width: 40px;
-      vertical-align: middle;
-      transition: transform @ffe-transition-duration @ffe-ease;
-  
-      @media screen and (min-width: @breakpoint-md) {
-        height: 40px;
-      }
-  
-      &:hover {
-        transform: scale(1.1);
-      }
+  @media (min-width: @breakpoint-md) {
+    top: @ffe-spacing-xs;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0 @ffe-spacing-sm;
+
+    .smud-nav__container--visible & {
+      display: block;
+      font-size: 1.4rem;
+      margin: @ffe-spacing-md 0;
     }
   }
+}
+
+.smud-nav__container {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease;
+
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: @ffe-spacing-xs 0;
+    background: rgba(0, 0, 0, .9);
+  }
+
+  @media (min-width: @breakpoint-md) {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.smud-menu-toggle {
+  position: fixed;
+  z-index: 12;
+  right: 20px;
+  top: 20px;
+  transform: translate3d(0, 0, 0);
+
+  @media (min-width: @breakpoint-md) {
+    display: none;
+  }
+}
+
+.smud-hamburger {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &__bar,
+  &::before,
+  &::after {
+    display: inline-block;
+    background: @ffe-blue-pale;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 0px rgba(0, 39, 118, .25);
+  }
+
+  &__bar {
+    position: absolute;
+    left: 0;
+    bottom: 14px;
+    transition: transform .2s ease, width .2s ease;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 24px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 4px;
+  }
+
+  &:before,
+  &::after {
+    transition: transform .2s ease;
+  }
+
+  &--expanded .smud-hamburger__bar {
+    width: 0;
+    transform: translate(12px);
+  }
+
+  &--expanded::before {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  &--expanded::after {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}
