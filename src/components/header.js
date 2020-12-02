@@ -19,17 +19,17 @@ const Header = () => (
     <nav className="smud-nav__container">
       <ul className="smud-nav__list">
         <li className="smud-nav__item">
-          <Link to="#page-1" className="">
+          <Link to="#page-1" className="smud-nav__link" onClick={toggleMenu}>
             [smu:d]
           </Link>
         </li>
         <li className="smud-nav__item">
-          <Link to="#page-2" className="">
+          <Link to="#page-2" className="smud-nav__link" onClick={toggleMenu}>
             Side 2
           </Link>
         </li>
         <li className="smud-nav__item">
-          <Link to="#page-3" className="">
+          <Link to="#page-3" className="smud-nav__link" onClick={toggleMenu}>
             Side 3
           </Link>
         </li>

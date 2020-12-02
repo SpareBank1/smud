@@ -3,10 +3,6 @@
   text-align: center;
   position: fixed;
 
-  @media (min-width: @breakpoint-md) {
-    top: @ffe-spacing-xs;
-  }
-
   &__list {
     list-style: none;
     padding: 0;
@@ -16,11 +12,25 @@
     display: inline-block;
     margin: 0 @ffe-spacing-sm;
 
-    .smud-nav__container--visible & {
-      display: block;
-      font-size: 1.4rem;
-      margin: @ffe-spacing-md 0;
+    @media (max-width: (@breakpoint-md - 1)) {
+      .smud-nav__container--visible & {
+        display: block;
+        font-size: 1.4rem;
+        margin: @ffe-spacing-md 0;
+      }
     }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: @ffe-white;
+      text-decoration: none;
+    }
+  }
+
+  @media (min-width: @breakpoint-md) {
+    background: @ffe-blue-cobalt;
   }
 }
 
@@ -29,15 +39,17 @@
   visibility: hidden;
   transition: opacity .2s ease;
 
-  &--visible {
-    opacity: 1;
-    visibility: visible;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: @ffe-spacing-xs 0;
-    background: rgba(0, 0, 0, .9);
+  @media (max-width: (@breakpoint-md - 1)) {
+    &--visible {
+      opacity: 1;
+      visibility: visible;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: @ffe-spacing-xs 0;
+      background: rgba(0, 39, 118, .95);
+    }
   }
 
   @media (min-width: @breakpoint-md) {
@@ -49,8 +61,8 @@
 .smud-menu-toggle {
   position: fixed;
   z-index: 12;
-  right: 20px;
-  top: 20px;
+  right: @ffe-spacing-sm;
+  top: @ffe-spacing-sm;
   transform: translate3d(0, 0, 0);
 
   @media (min-width: @breakpoint-md) {
@@ -62,42 +74,38 @@
   position: relative;
   vertical-align: middle;
   display: inline-block;
-  height: 30px;
-  width: 30px;
-  background: transparent;
+  height: 50px;
+  width: 50px;
+  background: @ffe-blue-cobalt;
   border: none;
+  border-radius: 50%;
   cursor: pointer;
 
   &__bar,
   &::before,
   &::after {
     display: inline-block;
-    background: @ffe-blue-pale;
+    background: @ffe-white;
     width: 30px;
     height: 4px;
     border-radius: 2px;
-    box-shadow: 0 1px 1px 0px rgba(0, 39, 118, .25);
+    position: absolute;
+    left: 10px;
   }
 
   &__bar {
-    position: absolute;
-    left: 0;
-    bottom: 14px;
+    bottom: 23px;
     transition: transform .2s ease, width .2s ease;
   }
 
   &::before {
-    position: absolute;
     content: '';
-    left: 0;
-    bottom: 24px;
+    bottom: 33px;
   }
 
   &::after {
-    position: absolute;
     content: '';
-    left: 0;
-    bottom: 4px;
+    bottom: 13px;
   }
 
   &:before,
@@ -105,7 +113,11 @@
     transition: transform .2s ease;
   }
 
-  &--expanded .smud-hamburger__bar {
+  &--expanded {
+    background: transparent;
+  }
+
+  &--expanded &__bar {
     width: 0;
     transform: translate(12px);
   }
