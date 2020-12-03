@@ -49,52 +49,58 @@ img {
 }
 
 .smud-logo{
-  .ffe-fontsize-h1;
+  font-size: 60px;
+  @media (min-width:@breakpoint-sm) {
+    font-size: 70px;
+  }
+  
   &__text{
     display: inline-block;
     animation: smud-text 3s ease-in infinite alternate;
   }
+
+  &__end{
+    text-align: right;
+    animation-name: u-space,u-space-end,u-space-theend;
+    animation-duration: 6s, 4s, 1s;
+    animation-timing-function: ease-in-out, ease, ease-in-out;
+    animation-delay: 0.5s, 5s, 9.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  &__u {
+    animation-name: u-bounce, u-move;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0), ease;
+    animation-iteration-count: 1;
+    animation-duration: 1s, 4s;
+    animation-delay: 2s, 5s;
+  }
+  
+  @keyframes u-bounce {
+    0%    { transform: translateX(0) }
+    20%   { transform: translateX(-3px) }
+    40%   { transform: translateX(+12px) }
+    100%  { transform: translateX(0) }
+  }
+  @keyframes u-space {
+    0%,30%  { margin-left:0px }
+    50%,100%{ margin-left: 120px }
+  }
+  @keyframes u-move {
+    0%    { margin-left:0px }
+    60%   { margin-left: 120px }
+    100%  { margin-left:0px }
+  }
+  @keyframes u-space-end {
+    0%    { margin-left: 120px }
+    60%   {margin-left: 0px }
+    100%  { margin-left: 120px }
+  }
+  @keyframes u-space-theend {
+    0%    { margin-left: 120px }
+    100%  { margin-left: 0px}
+  }
 }
 
-.smud-logo__end{
-  text-align: right;
-  animation-name: u-space,u-space-end,u-space-theend;
-  animation-duration: 6s,8s,2s;
-  animation-timing-function: ease-in-out,ease, ease-in-out;
-  animation-delay: 1.2s,5s,13s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
 
-.smud-logo__u {
-  animation-name: u-bounce, u-move;
-  animation-timing-function: ease;
-  animation-iteration-count: 1;
-  animation-duration: 2s,8s;
-  animation-delay: 2s,5s;
-}
-
-@keyframes u-bounce {
-  0%    { transform: translateX(0); }
-  50%   { transform: translateX(-3px); }
-  80%   { transform: translateX(+12px); }
-  100%  { transform: translateX(0); }
-}
-@keyframes u-space {
-  0%,30%{ margin-left:0px }
-  50%,100%{ margin-left: 120px; }
-}
-@keyframes u-move {
-  0%{  margin-left:0px }
-  60%{margin-left: 120px;}
-  100%{  margin-left:0px }
-}
-@keyframes u-space-end {
-  0%{  margin-left: 120px }
-  60%{margin-left: 0px;}
-  100%{  margin-left: 120px }
-}
-@keyframes u-space-theend {
-  0%{  margin-left: 120px }
-  100%{margin-left: 0px;}
-}
