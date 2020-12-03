@@ -200,3 +200,99 @@ img {
     display: block;
   }
 }
+
+.a-smud-logo{
+  font-size: 60px;
+  display: flex;
+  align-items: flex-start;
+  height: 80px;
+  font-weight: bold;
+
+  @media (min-width:@breakpoint-sm) {
+    font-size: 70px;
+    height: 90px;
+  }
+  
+  &__text{
+    display: inline-block;
+    position: relative;
+  }
+
+  &__end{
+    text-align: right;
+    animation-name: u-space,u-space-end,u-space-theend;
+    animation-duration: 6s, 4s, 1s;
+    animation-timing-function: ease-in-out, ease, ease-in-out;
+    animation-delay: 0.5s, 5s, 9.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  &__u {
+    animation-name: u-bounce, u-move;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0), ease;
+    animation-iteration-count: 1;
+    animation-duration: 1s, 4s;
+    animation-delay: 2s, 5s;
+    position: relative;
+  }
+  &__hale{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+  }
+  &__u2{
+    animation: u2-move 4s ease 5.1s 1;
+  }
+  &__u3{
+    animation: u2-move 4s ease 5.15s 1;
+  }
+  &__u4{
+    animation: u2-move 4s ease 5.2s 1;
+  }
+  &__u5{
+    animation: u2-move 4s ease 5.25s 1;
+  }
+  &__u6{
+    animation: u2-move 4s ease 5.3s 1;
+  }
+  &__u7{
+    animation: u2-move 4s ease 5.35s 1;
+  }
+  
+  @keyframes u-bounce {
+    0%    { transform: translateX(0) }
+    20%   { transform: translateX(-3px) }
+    40%   { transform: translateX(+12px) }
+    100%  { transform: translateX(0) }
+  }
+  @keyframes u-space {
+    0%,30%  { margin-left:0px }
+    50%,100%{ margin-left: 120px }
+  }
+  @keyframes u-move {
+    0%    { margin-left:0px }
+    20%   { padding-top: 15px}
+    60%   { padding-top: 0px}
+    60%   { margin-left: 120px }
+    100%  { margin-left:0px }
+  }
+  @keyframes u2-move {
+    0%,100% { opacity:0.7 }
+    0%    { margin-left: 0px }
+    20%   { padding-top: 13px}
+    60%   { padding-top: 0px}
+    60%   { margin-left: 120px }
+    100%  { margin-left:0px }
+  }
+  @keyframes u-space-end {
+    0%    { margin-left: 120px }
+    60%   {margin-left: 0px }
+    100%  { margin-left: 120px }
+  }
+  @keyframes u-space-theend {
+    0%    { margin-left: 120px }
+    100%  { margin-left: 0px}
+  }
+}
+
