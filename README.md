@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/SpareBank1/smud.svg?branch=master)](https://travis-ci.org/SpareBank1/smud)
 
-Dette repositoryet inneholder SpareBank 1s rekrutteringssite for designere og utviklere. Siten lages med [GatsbyJS](https://www.gatsbyjs.org) og [SpareBank 1 Designsystem](https://design.sparebank1.no/).
+En produktkonferanse i regi av SpareBank 1 Utvikling, for hele alliansen. Siten lages med [GatsbyJS](https://www.gatsbyjs.org) og [SpareBank 1 Designsystem](https://design.sparebank1.no/).
 
 ### Kom i gang
 
