@@ -50,13 +50,18 @@ img {
 
 .smud-logo{
   font-size: 60px;
+  display: flex;
+  align-items: flex-start;
+  height: 80px;
+  font-weight: bold;
+
   @media (min-width:@breakpoint-sm) {
     font-size: 70px;
+    height: 90px;
   }
   
   &__text{
     display: inline-block;
-    animation: smud-text 3s ease-in infinite alternate;
   }
 
   &__end{
@@ -89,6 +94,8 @@ img {
   }
   @keyframes u-move {
     0%    { margin-left:0px }
+    20%   { padding-top: 15px}
+    60%   { padding-top: 0px}
     60%   { margin-left: 120px }
     100%  { margin-left:0px }
   }
