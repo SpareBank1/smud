@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/header'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Smud from '../components/smud'
 
 const IndexPage = (props) => (
   <Layout>
@@ -11,7 +12,7 @@ const IndexPage = (props) => (
 
     <section className="smud-page smud-page--1" id="page-1">
         <div className="smud-page__container">
-            <h1 className="smud-h1">[smu:d]</h1>
+            <Smud />
             <p>En produktkonferanse i regi av SpareBank 1 Utvikling for hele alliansen</p>
         </div>
     </section>
