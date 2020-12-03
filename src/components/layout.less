@@ -17,9 +17,14 @@ img {
 .smud-page {
   min-height: 100vh;
   width: 100vw;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: @breakpoint-md) {
+    padding: @ffe-spacing-3xl 0;
+  }
 
   &--1 {
     background: @ffe-blue-cobalt;
@@ -28,11 +33,53 @@ img {
 
   &--2 {
     background: #d3d3e8;
+    align-items: flex-start;
+
+    .smud-h2 {
+      margin-top: 30%;
+
+      @media (min-width: @breakpoint-md) {
+        width: 70%;
+        margin-top: 20%;
+      }
+    }
+  }
+
+  &--6 {
+    background: @ffe-blue-cobalt;
+    color: @ffe-white;
   }
 
   &__container {
     max-width: 1000px;
     padding: @ffe-spacing-sm;
+  }
+}
+
+.smud-logo {
+  position: absolute;
+  right: @ffe-spacing-sm;
+  bottom: @ffe-spacing-sm;
+  max-width: 150px;
+
+  @media (min-width: @breakpoint-md) {
+    max-width: 250px;
+  }
+}
+
+.smud-stories {
+  position: absolute;
+  right: @ffe-spacing-sm;
+  bottom: @ffe-spacing-sm;
+  max-width: 50%;
+  z-index: 0;
+
+  @media (min-width: @breakpoint-sm) {
+    max-width: 300px;
+  }
+
+  @media (min-width: @breakpoint-md) {
+    max-width: 400px;
   }
 }
 
@@ -42,8 +89,97 @@ img {
 
 .smud-h2 {
   .ffe-fontsize-h2;
+  color: @ffe-blue-royal;
+  margin-bottom: 3rem;
+  line-height: 1.3;
+  padding-right: 70px;
+
+  @media (min-width: @breakpoint-md) {
+    padding-right: 0;
+  }
 }
 
 .smud-h3 {
   .ffe-fontsize-h3;
+  line-height: 1.3;
+}
+
+.smud-talks {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__talk-title,
+  &__speaker-name {
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: @ffe-spacing-md 0;
+  }
+
+  &__speaker-image {
+    width: 90px;
+    margin-right: @ffe-spacing-md;
+
+    @media (min-width: @breakpoint-md) {
+      width: 125px;
+    }
+
+    &--pair {
+      position: relative;
+      height: 100px;
+
+      @media (min-width: @breakpoint-md) {
+        height: 125px;
+      }
+
+      img {
+        position: absolute;
+        width: 65px;
+
+        @media (min-width: @breakpoint-md) {
+          width: 80px;
+        }
+
+        &:first-child {
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+
+        &:last-child {
+          bottom: 0;
+          right: 0;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
+
+.smud-holdthedate {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: @ffe-blue-royal;
+  margin: 0;
+
+  @media (min-width: @breakpoint-md) {
+    font-size: 2.5rem;
+    width: 450px;
+    height: 450px;
+  }
+
+  time {
+    display: block;
+  }
 }
