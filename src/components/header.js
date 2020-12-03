@@ -25,12 +25,27 @@ const Header = () => (
         </li>
         <li className="smud-nav__item">
           <Link to="#page-2" className="smud-nav__link" onClick={toggleMenu}>
-            Side 2
+            Historier
           </Link>
         </li>
         <li className="smud-nav__item">
           <Link to="#page-3" className="smud-nav__link" onClick={toggleMenu}>
-            Side 3
+            Produkter som kundene elsker
+          </Link>
+        </li>
+        <li className="smud-nav__item">
+          <Link to="#page-4" className="smud-nav__link" onClick={toggleMenu}>
+            Høypresterende team
+          </Link>
+        </li>
+        <li className="smud-nav__item">
+          <Link to="#page-5" className="smud-nav__link" onClick={toggleMenu}>
+            Elskverdige eksempler
+          </Link>
+        </li>
+        <li className="smud-nav__item">
+          <Link to="#page-6" className="smud-nav__link" onClick={toggleMenu}>
+            Program
           </Link>
         </li>
       </ul>
