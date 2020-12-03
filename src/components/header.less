@@ -1,64 +1,132 @@
-.sb1-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  
-    @media screen and (min-width: @breakpoint-md) {
-      padding: 30px 20px;
-    }
-  
-    &--opening {
-      background: transparent;
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-    }
-  
-    &__link {
-      &--home {
-        flex-basis: 70%;
-        color: @ffe-blue-royal;
-        font-family: 'MuseoSansRounded-700', arial, sans-serif;
-        font-weight: normal;
-        font-size: 18px;
-        text-decoration: none;
+.smud-nav {
+  width: 100vw;
+  text-align: center;
+  position: fixed;
 
-        &:hover {
-            color: @ffe-blue-cobalt;
-        }
-  
-        @media screen and (min-width: @breakpoint-md) {
-          flex-basis: 50%;
-          font-size: 32px;
-        }
-      }
-    }
-  
-    &__logo {
-      height: 20px;
-      margin-bottom: @ffe-spacing-xs;
-      vertical-align: middle;
-      transition: transform @ffe-transition-duration @ffe-ease;
-  
-      @media screen and (min-width: @breakpoint-md) {
-        height: 30px;
-      }
-    }
-  
-    &__github-logo {
-      height: 30px;
-      max-width: 40px;
-      vertical-align: middle;
-      transition: transform @ffe-transition-duration @ffe-ease;
-  
-      @media screen and (min-width: @breakpoint-md) {
-        height: 40px;
-      }
-  
-      &:hover {
-        transform: scale(1.1);
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0 @ffe-spacing-sm;
+
+    @media (max-width: (@breakpoint-md - 1)) {
+      .smud-nav__container--visible & {
+        display: block;
+        font-size: 1.4rem;
+        margin: @ffe-spacing-md 0;
       }
     }
   }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: @ffe-white;
+      text-decoration: none;
+    }
+  }
+
+  @media (min-width: @breakpoint-md) {
+    background: @ffe-blue-cobalt;
+  }
+}
+
+.smud-nav__container {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .2s ease;
+
+  @media (max-width: (@breakpoint-md - 1)) {
+    &--visible {
+      opacity: 1;
+      visibility: visible;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: @ffe-spacing-xs 0;
+      background: rgba(0, 39, 118, .95);
+    }
+  }
+
+  @media (min-width: @breakpoint-md) {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.smud-menu-toggle {
+  position: fixed;
+  z-index: 12;
+  right: @ffe-spacing-sm;
+  top: @ffe-spacing-sm;
+  transform: translate3d(0, 0, 0);
+
+  @media (min-width: @breakpoint-md) {
+    display: none;
+  }
+}
+
+.smud-hamburger {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: @ffe-blue-cobalt;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &__bar,
+  &::before,
+  &::after {
+    display: inline-block;
+    background: @ffe-white;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 10px;
+  }
+
+  &__bar {
+    bottom: 23px;
+    transition: transform .2s ease, width .2s ease;
+  }
+
+  &::before {
+    content: '';
+    bottom: 33px;
+  }
+
+  &::after {
+    content: '';
+    bottom: 13px;
+  }
+
+  &:before,
+  &::after {
+    transition: transform .2s ease;
+  }
+
+  &--expanded {
+    background: transparent;
+  }
+
+  &--expanded &__bar {
+    width: 0;
+    transform: translate(12px);
+  }
+
+  &--expanded::before {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  &--expanded::after {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}

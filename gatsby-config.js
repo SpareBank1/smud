@@ -14,43 +14,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/pages/static`,
-        name: "markdown-pages",
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-143149392-1",
-      },
-    },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `3270750488`,
-      },
-    },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `11452000456`,
-      },
-    },
-    {
-      resolve: `gatsby-source-rss-feed`,
-      options: {
-        url: `https://medium.com/feed/sparebank1-digital`,
-        name: `sb1digital`,
-        parserOption: {
-          customFields: {
-            item: ['image:url'],
-          },
-        },
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
