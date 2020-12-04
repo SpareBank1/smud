@@ -1,10 +1,10 @@
 @import '~@sb1/ffe-core/less/ffe';
-@import (inline) '~@sb1/ffe-webfonts/fonts.css';
+@import 'fonts';
 @import 'header';
 
 
 body {
-  font-family: 'MuseoSans-300', arial, sans-serif;
+  font-family: 'SB1-regular', arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   background: @ffe-white;
@@ -25,6 +25,22 @@ body {
         border-radius: 4px;
     }
   }
+}
+
+p,
+div,
+ul,
+li {
+    font-family: 'SB1-regular', arial, sans-serif;
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'SB1-title-medium', arial, sans-serif;
+    font-weight: normal;
 }
 
 img {
@@ -181,6 +197,7 @@ img {
 
 .smud-holdthedate {
   font-size: 2rem;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,6 +206,7 @@ img {
   border-radius: 50%;
   background-color: @ffe-blue-royal;
   margin: 0;
+  transform: rotate(5deg);
 
   @media (min-width: @breakpoint-md) {
     font-size: 2.5rem;
@@ -206,7 +224,6 @@ img {
   display: flex;
   align-items: flex-start;
   height: 80px;
-  font-weight: bold;
 
   @media (min-width:@breakpoint-sm) {
     font-size: 70px;
@@ -216,6 +233,7 @@ img {
   &__text{
     display: inline-block;
     position: relative;
+    font-family: 'SB1-title-medium', arial, sans-serif;
   }
 
   &__end{
