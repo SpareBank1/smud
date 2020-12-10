@@ -196,59 +196,40 @@ img {
 }
 
 .smud-holdthedate {
-  font-size: 2rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-color: @ffe-blue-royal;
-  margin: 0;
-  transform: rotate(5deg);
-
-  @media (min-width: @breakpoint-md) {
-    font-size: 2.5rem;
-    width: 350px;
-    height: 350px;
-  }
-
-  time {
-    display: block;
-  }
+  padding-right: 0;
+  color: @ffe-white;
 }
 
 .smud-register {
   font-size: 2rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-decoration: none;
+  display: block;
   width: 300px;
   height: 300px;
+  line-height: 300px;
   border-radius: 50%;
   background-color: @ffe-green-emerald;
-  margin: 30px;
-  transform: rotate(0deg);
-
-  a:link {
-    color: white;
-    text-decoration: none;
-  }
-  a:visited {
-    color: white;
-    text-decoration: none;
-  }
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  color: @ffe-white;
+  margin: @ffe-spacing-3xl @ffe-spacing-md @ffe-spacing-md @ffe-spacing-md;
+  transform: rotate(3deg);
+  transition: all @ffe-transition-duration @ffe-ease;
 
   @media (min-width: @breakpoint-md) {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     width: 450px;
     height: 450px;
+    line-height: 450px;
   }
 
-  time {
-    display: block;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken(@ffe-green-emerald, 5%);
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: rotate(0deg);
   }
 }
 
