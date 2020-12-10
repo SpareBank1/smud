@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Smud from '../components/smud'
+import { ActionButton } from '@sb1/ffe-buttons-react';
 
 import stories from '../images/stories.png';
 import sb1logo from '../images/sb1logo.png';
@@ -201,6 +202,13 @@ const IndexPage = (props) => (
                 <h2 className="smud-h4 smud-holdthedate">
                     <span>
                         Hold av datoen <time datetime="2021-01-14">14. januar 2021!</time>
+                    </span>
+                </h2>
+                <h2 className="smud-h4 smud-register">
+                    <span>
+                        <ActionButton element="a" href="https://www.pilot.intern.sparebank1.no/smud/" >
+                            Påmelding!
+                        </ActionButton>
                     </span>
                 </h2>
                 <img src={sb1logo} className="smud-logo" alt="SpareBank 1 Logo" />
