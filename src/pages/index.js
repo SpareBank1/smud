@@ -206,6 +206,18 @@ const IndexPage = (props) => (
                 <a href="https://www.pilot.intern.sparebank1.no/smud/" className="smud-register">
                     Påmelding!
                 </a>
+                
+                <div className="smud-sb1-network">
+                    <p>
+                        <span>PSST! Du må være på SpareBank 1 sitt nettverk for kunne melde deg på.</span>
+                        <span>Bruk derfor jobbmaskinen din med oppkoblet VPN.</span>
+                    </p>
+                    <p>
+                        <span>Vi hjelper deg gjerne :)</span>
+                        <span><a href="mailto:smud@sparebank1.no" className="smud-email">smud@sparebank1.no</a></span>
+                    </p>
+                </div>
+
                 <img src={sb1logo} className="smud-logo" alt="SpareBank 1 Logo" />
             </div>
         </section>
