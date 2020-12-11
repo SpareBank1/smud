@@ -207,6 +207,18 @@ const IndexPage = (props) => (
                     Påmelding!
                 </a>
                 <img src={sb1logo} className="smud-logo" alt="SpareBank 1 Logo" />
+                <div className="smud-sb1-network">
+                    <p>
+                        <span>
+                            PSST! Du må være på SpareBank 1 sitt nettverk for kunne melde deg på.<br/>
+                            Bruk derfor jobbmaskinen din med oppkoblet VPN.
+                        </span>
+                    </p>
+                    <p>
+                        Vi hjelper deg gjerne :) <br/>
+                        <b><a href= "mailto:smud@sparebank1.no" className="a-smud-email">smud@sparebank1.no</a></b>
+                    </p>
+                </div>
             </div>
         </section>
     </main>

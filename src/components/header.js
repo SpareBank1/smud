@@ -45,7 +45,7 @@ const Header = () => (
         </li>
         <li className="smud-nav__item">
           <Link to="#page-6" className="smud-nav__link" onClick={toggleMenu}>
-            Program
+            Meld deg på!
           </Link>
         </li>
       </ul>
