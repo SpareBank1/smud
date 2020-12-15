@@ -57,6 +57,7 @@ const IndexPage = (props) => (
                             <div className="smud-talks__talk">
                                 <h3 className="smud-h3 smud-talks__talk-title">Det blåser nordavind fra alle kanter</h3>
                                 <p className="smud-talks__speaker-name">Tore Haarberg</p>
+                                <p className="smud-talks__speaker-title">Direktør/Lagleder på betalingsområdet i SpareBank 1 Utvikling</p>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -68,6 +69,7 @@ const IndexPage = (props) => (
                             <div className="smud-talks__talk">
                                 <h3 className="smud-h3 smud-talks__talk-title">Lønnsomme problemer</h3>
                                 <p className="smud-talks__speaker-name">Anne Gundersen</p>
+                                <p className="smud-talks__speaker-title">UX-Strateg i SpareBank 1 Utvikling</p>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -80,6 +82,7 @@ const IndexPage = (props) => (
                             <div className="smud-talks__talk">
                                 <h3 className="smud-h3 smud-talks__talk-title">"Ikke nok et jævla statusmøte"</h3>
                                 <p className="smud-talks__speaker-name">Marthe Slaatsveen og Thomas Nygaard</p>
+                                <p className="smud-talks__speaker-title">Områdeleder og produkteier i SpareBank 1 Utvikling</p>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -91,6 +94,7 @@ const IndexPage = (props) => (
                             <div className="smud-talks__talk">
                                 <h3 className="smud-h3 smud-talks__talk-title">Vipps Mobil – Hvordan forenkle og forandre Telekom på rekordfart?</h3>
                                 <p className="smud-talks__speaker-name">Elisabeth Haug</p>
+                                <p className="smud-talks__speaker-title">Leder for Powered by Vipps/New business i Vipps</p>
                             </div>
                         </li>
                     </ul>
@@ -112,6 +116,7 @@ const IndexPage = (props) => (
                             <div className="smud-talks__talk">
                                 <h3 className="smud-h3 smud-talks__talk-title">Hva kjennetegner team som lykkes med å lage de beste produktene?</h3>
                                 <p className="smud-talks__speaker-name">Nils Brede Moe</p>
+                                <p className="smud-talks__speaker-title">Chief Scientist i SINTEF Digital</p>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -121,8 +126,9 @@ const IndexPage = (props) => (
                                 </div>
                             </div>
                             <div className="smud-talks__talk">
-                                <h3 className="smud-h3 smud-talks__talk-title">Torsdag er den nye lørdagen!</h3>
+                                <h3 className="smud-h3 smud-talks__talk-title">"Torsdag er den nye lørdagen!" - Hvorfor bruker vi en arbeidsdag i uka på fag?</h3>
                                 <p className="smud-talks__speaker-name">Stian Conradsen</p>
+                                <p className="smud-talks__speaker-title">Utvikler i SpareBank 1 Utvikling</p>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -133,8 +139,9 @@ const IndexPage = (props) => (
                                 </div>
                             </div>
                             <div className="smud-talks__talk">
-                                <h3 className="smud-h3 smud-talks__talk-title">Lett å gjøre rett</h3>
+                                <h3 className="smud-h3 smud-talks__talk-title">Det skal være lett å gjøre rett</h3>
                                 <p className="smud-talks__speaker-name">Vidar Moe og Ola Hast</p>
+                                <p className="smud-talks__speaker-title">Utviklere i SpareBank 1 Utvikling</p>
                             </div>
                         </li>
                     </ul>
@@ -156,6 +163,7 @@ const IndexPage = (props) => (
                             <div className="smud-talks__talk">
                                 <h3 className="smud-h3 smud-talks__talk-title">Bank + Regnskap: Å lage et produkt av det vi allerede har</h3>
                                 <p className="smud-talks__speaker-name">Møyfrid Risdal</p>
+                                <p className="smud-talks__speaker-title">Senior Prosjektleder i SR-Bank</p>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -167,6 +175,7 @@ const IndexPage = (props) => (
                             <div className="smud-talks__talk">
                                 <h3 className="smud-h3 smud-talks__talk-title">2,1 millioner bidrag til et renere hav</h3>
                                 <p className="smud-talks__speaker-name">Kristine Ursfjord</p>
+                                <p className="smud-talks__speaker-title">Bærekraftsambassadør i SpareBank 1 Utvikling</p>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -178,6 +187,7 @@ const IndexPage = (props) => (
                             <div className="smud-talks__talk">
                                 <h3 className="smud-h3 smud-talks__talk-title">Hvordan SpareBank 1 ble først med abonnementshåndtering i mobilbanken</h3>
                                 <p className="smud-talks__speaker-name">Christian Fjestad</p>
+                                <p className="smud-talks__speaker-title">Leder Innovasjon i SpareBank 1 Østlandet</p>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -189,6 +199,7 @@ const IndexPage = (props) => (
                             <div className="smud-talks__talk">
                                 <h3 className="smud-h3 smud-talks__talk-title">Hvorfor innovasjon er best i store bedrifter</h3>
                                 <p className="smud-talks__speaker-name">Svein Skovly</p>
+                                <p className="smud-talks__speaker-title">Leder Innovasjon i Fremtind Forsikring</p>
                             </div>
                         </li>
                     </ul>
