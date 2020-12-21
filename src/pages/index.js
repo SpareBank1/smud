@@ -21,6 +21,8 @@ import thomasnygaard from '../images/thomasnygaard.png';
 import torehaarberg from '../images/torehaarberg.png';
 import vidarmoe from '../images/vidarmoe.png';
 
+import { Link } from 'gatsby-plugin-modal-routing'
+
 const IndexPage = (props) => (
   <Layout>
     <SEO title="SpareBank 1 [smu:d]" keywords={[`sparebank 1`, `utvikling`]} />
@@ -129,6 +131,7 @@ const IndexPage = (props) => (
                                 <h3 className="smud-h3 smud-talks__talk-title">"Torsdag er den nye lørdagen!" - Hvorfor bruker vi en arbeidsdag i uka på fag?</h3>
                                 <p className="smud-talks__speaker-name">Stian Conradsen</p>
                                 <p className="smud-talks__speaker-title">Utvikler i SpareBank 1 Utvikling</p>
+                                <Link to="/torsdag-er-den-nye-lordagen/" asModal>Les mer</Link>
                             </div>
                         </li>
                         <li className="smud-talks__item">
