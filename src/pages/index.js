@@ -12,7 +12,7 @@ import christianfjestad from '../images/christianfjestad.png';
 import elisabethhaug from '../images/elisabethhaug.png';
 import kristineursfjord from '../images/kristineursfjord.png';
 import martheslaatsveen from '../images/martheslaatsveen.png';
-import moyfridrisdal from '../images/moyfridrisdal.png';
+import moyfridrisdal from '../images/moyfridrisdal2.png';
 import nilsbredemoe from '../images/nilsbredemoe.png';
 import olahast from '../images/olahast.png';
 import stianconradsen from '../images/stianconradsen.png';
