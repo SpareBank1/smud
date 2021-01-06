@@ -90,7 +90,7 @@ const IndexPage = (props) => (
                                 </div>
                             </div>
                             <div className="smud-talks__talk">
-                                <h3 className="smud-h3 smud-talks__talk-title">10.30 - 10.55: Lønnsomme problemer</h3>
+                                <h3 className="smud-h3 smud-talks__talk-title">10.30 - 10.55: Verdifulle problemer</h3>
                                 <p className="smud-talks__speaker-name">Anne Gundersen</p>
                                 <p className="smud-talks__speaker-title">UX-Strateg i SpareBank 1 Utvikling</p>
                             </div>
