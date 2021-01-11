@@ -203,6 +203,7 @@ const IndexPage = (props) => (
                                 <h3 className="smud-h3 smud-talks__talk-title">14.20 - 14.30: Hvordan SpareBank 1 ble først med abonnementshåndtering i mobilbanken</h3>
                                 <p className="smud-talks__speaker-name">Christian Fjestad</p>
                                 <p className="smud-talks__speaker-title">Leder Innovasjon i SpareBank 1 Østlandet</p>
+                                <Link to="/abonnement/" asModal>Les mer</Link>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -215,6 +216,7 @@ const IndexPage = (props) => (
                                 <h3 className="smud-h3 smud-talks__talk-title">14:30 - 14.40: 2,1 millioner bidrag til et renere hav</h3>
                                 <p className="smud-talks__speaker-name">Kristine Ursfjord</p>
                                 <p className="smud-talks__speaker-title">Bærekraftsambassadør i SpareBank 1 Utvikling</p>
+                                <Link to="/renthav/" asModal>Les mer</Link>
                             </div>
                         </li>
                         <li className="smud-talks__item">
