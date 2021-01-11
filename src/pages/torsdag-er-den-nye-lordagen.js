@@ -26,12 +26,12 @@ const ModalExamplePage = () => (
 
                     <h4 className="smud-h4">Stian Conradsen</h4>
                     <div>
-                        Primært utvikler, men i år også avdelingsleder for våre fantastiske utviklere. Jeg har kodet nettbank og mobilbank i SpareBank 1 de siste 11 årene.
+                        Primært utvikler, men for tiden også avdelingsleder for våre fantastiske utviklere. Jeg har kodet nettbank og mobilbank i SpareBank 1 de siste 11 årene.
                     </div>
 
                     <h4 className="smud-h4">Foredraget</h4>
                     <div>
-                        Hvordan sikrer vi kontinuerlig læring i en kunnskapsbedrift? SpareBank 1 Utvikling har i to år brukt en arbeidsdag i uken på fag. Denne dagen forlater vi det trygge teamet vårt, og samler oss i nye selvorganiserende grupperinger. Vi bruker dagene på kursing, vi koder nye løsninger, vi lager foredrag og vi gjør forbedringer på fellesløsninger. Jeg vil fortelle om hvordan vi fikk ledelsen med på ideen om en fagdag pr. uke. Jeg vil også fortelle om hvordan vi gjennomfører denne dagen, samt hvilke resultater vi har oppnådd.
+                        Hvordan sikrer vi kontinuerlig læring i en kunnskapsbedrift? SpareBank 1 Utvikling har i to år brukt en arbeidsdag i uken på fag. Denne dagen forlater vi det trygge teamet vårt, og samler oss i nye selvorganiserende grupperinger. Vi bruker dagene på kursing, vi koder nye løsninger, vi deler kunnskap og vi gjør forbedringer på våre fellesløsninger. Jeg vil fortelle om hvorfor vi innførte fagdagen, hvordan vi gjennomfører denne dagen, samt hvilke resultater vi har oppnådd.
                     </div>
 
                 </div>
