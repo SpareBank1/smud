@@ -60,6 +60,7 @@ const IndexPage = (props) => (
                                 <h3 className="smud-h3 smud-talks__talk-title">Det blåser nordavind fra alle kanter</h3>
                                 <p className="smud-talks__speaker-name">Tore Haarberg</p>
                                 <p className="smud-talks__speaker-title">Direktør/Lagleder på betalingsområdet i SpareBank 1 Utvikling</p>
+                                <Link to="/nordavind/" asModal>Les mer</Link>
                             </div>
                         </li>
                         <li className="smud-talks__item">
