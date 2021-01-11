@@ -50,5 +50,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-less`,
+    `gatsby-plugin-modal-routing`,
   ],
 }

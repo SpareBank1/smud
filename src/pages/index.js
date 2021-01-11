@@ -22,6 +22,8 @@ import thomasnygaard from '../images/thomasnygaard.png';
 import torehaarberg from '../images/torehaarberg.png';
 import vidarmoe from '../images/vidarmoe.png';
 
+import { Link } from 'gatsby-plugin-modal-routing'
+
 const IndexPage = (props) => (
   <Layout>
     <SEO title="SpareBank 1 [smu:d]" keywords={[`sparebank 1`, `utvikling`]} />
@@ -71,6 +73,7 @@ const IndexPage = (props) => (
                                 <h3 className="smud-h3 smud-talks__talk-title">10.10 - 10.25: Det blåser nordavind fra alle kanter</h3>
                                 <p className="smud-talks__speaker-name">Tore Haarberg</p>
                                 <p className="smud-talks__speaker-title">Direktør/Lagleder på betalingsområdet i SpareBank 1 Utvikling</p>
+                                <Link to="/nordavind/" asModal>Les mer</Link>
                             </div>
                         </li>
                     </ul>
@@ -152,6 +155,7 @@ const IndexPage = (props) => (
                                 <h3 className="smud-h3 smud-talks__talk-title">13.00 - 13.25: "Torsdag er den nye lørdagen!" - Hvorfor bruker vi en arbeidsdag i uka på fag?</h3>
                                 <p className="smud-talks__speaker-name">Stian Conradsen</p>
                                 <p className="smud-talks__speaker-title">Utvikler i SpareBank 1 Utvikling</p>
+                                <Link to="/torsdag-er-den-nye-lordagen/" asModal>Les mer</Link>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -199,6 +203,7 @@ const IndexPage = (props) => (
                                 <h3 className="smud-h3 smud-talks__talk-title">14.20 - 14.30: Hvordan SpareBank 1 ble først med abonnementshåndtering i mobilbanken</h3>
                                 <p className="smud-talks__speaker-name">Christian Fjestad</p>
                                 <p className="smud-talks__speaker-title">Leder Innovasjon i SpareBank 1 Østlandet</p>
+                                <Link to="/abonnement/" asModal>Les mer</Link>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -211,6 +216,7 @@ const IndexPage = (props) => (
                                 <h3 className="smud-h3 smud-talks__talk-title">14:30 - 14.40: 2,1 millioner bidrag til et renere hav</h3>
                                 <p className="smud-talks__speaker-name">Kristine Ursfjord</p>
                                 <p className="smud-talks__speaker-title">Bærekraftsambassadør i SpareBank 1 Utvikling</p>
+                                <Link to="/renthav/" asModal>Les mer</Link>
                             </div>
                         </li>
                         <li className="smud-talks__item">

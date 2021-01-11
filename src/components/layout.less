@@ -141,6 +141,13 @@ img {
   line-height: 1.3;
 }
 
+.smud-h4 {
+  .ffe-fontsize-h4;
+  line-height: 1.3;
+  margin-bottom: .5rem;
+  color: @ffe-blue-royal;
+}
+
 .smud-talks {
   &__list {
     list-style: none;
@@ -359,5 +366,36 @@ img {
     0%    { margin-left: 120px }
     100%  { margin-left: 0px}
   }
+
 }
 
+.ReactModal__Content {
+  background-color: @ffe-white;
+  margin: auto;
+  position: relative;
+  inset: @ffe-spacing-md!important;
+  z-index: 4;
+
+  @media (min-width: @breakpoint-md) {
+    width: 75%;
+    height: 70%;
+  }
+}
+
+.ReactModal__Body--open {
+  .smud-talks__speaker-image--pair img {
+    display : none;
+  }
+}
+
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, .75)!important;
+  z-index: 4;
+}
+
+.smud-close {
+  position: absolute;
+  right: @ffe-spacing-md;
+  top: @ffe-spacing-md;
+  z-index: 5;
+}
