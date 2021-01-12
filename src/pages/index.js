@@ -240,16 +240,16 @@ const IndexPage = (props) => (
             <div className="smud-page__container">
                 <h2 className="smud-h2 smud-holdthedate">
                     <span>
-                        Hold av datoen <time datetime="2021-01-14">14. januar 2021!</time>
+                        Torsdag kl. 10 braker det løs!
                     </span>
                 </h2>
                 <a href="https://www.pilot.intern.sparebank1.no/smud/" className="smud-register">
-                    Påmelding/info
+                    Teams Live
                 </a>
                 
                 <div className="smud-sb1-network">
                     <p>
-                        <span>PSST! Du må være på SpareBank 1 sitt nettverk for kunne melde deg på.</span>
+                        <span>PSST! Du må være på SpareBank 1 sitt nettverk for kunne se Teams Live lenken.</span>
                         <span>Bruk derfor jobbmaskinen din med oppkoblet VPN.</span>
                     </p>
                     <p>
