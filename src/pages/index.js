@@ -109,6 +109,7 @@ const IndexPage = (props) => (
                                 <h3 className="smud-h3 smud-talks__talk-title">11.00 - 11.25: "Ikke nok et jævla statusmøte"</h3>
                                 <p className="smud-talks__speaker-name">Marthe Slaatsveen og Thomas Nygaard</p>
                                 <p className="smud-talks__speaker-title">Områdeleder og produkteier i SpareBank 1 Utvikling</p>
+                                <Link to="/marthethomas/" asModal>Les mer</Link>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -143,6 +144,7 @@ const IndexPage = (props) => (
                                 <h3 className="smud-h3 smud-talks__talk-title">12.30 - 12.55: Hva kjennetegner team som lykkes med å lage de beste produktene?</h3>
                                 <p className="smud-talks__speaker-name">Nils Brede Moe</p>
                                 <p className="smud-talks__speaker-title">Chief Scientist i SINTEF Digital</p>
+                                <Link to="/nilsbredesintef/" asModal>Les mer</Link>
                             </div>
                         </li>
                         <li className="smud-talks__item">
@@ -169,6 +171,7 @@ const IndexPage = (props) => (
                                 <h3 className="smud-h3 smud-talks__talk-title">13.30 - 13.55: Det skal være lett å gjøre rett</h3>
                                 <p className="smud-talks__speaker-name">Vidar Moe og Ola Hast</p>
                                 <p className="smud-talks__speaker-title">Utviklere i SpareBank 1 Utvikling</p>
+                                <Link to="/olavidar/" asModal>Les mer</Link>
                             </div>
                         </li>
                     </ul>
