@@ -243,7 +243,7 @@ const IndexPage = (props) => (
             <div className="smud-page__container">
                 <h2 className="smud-h2 smud-holdthedate">
                     <span>
-                        Torsdag kl. 10 braker det løs!
+                        Vi er klare! Kl. 10 braker det løs!
                     </span>
                 </h2>
                 <a href="https://www.pilot.intern.sparebank1.no/smud/" className="smud-register">
@@ -252,7 +252,7 @@ const IndexPage = (props) => (
                 
                 <div className="smud-sb1-network">
                     <p>
-                        <span>PSST! Du må være på SpareBank 1 sitt nettverk for kunne se Teams Live lenken.</span>
+                        <span>PSST! Du må være på SpareBank 1 sitt nettverk for kunne nå Teams Live lenken.</span>
                         <span>Bruk derfor jobbmaskinen din med oppkoblet VPN.</span>
                     </p>
                     <p>
