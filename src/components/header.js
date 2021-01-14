@@ -50,7 +50,7 @@ const Header = () => (
         </li>
         <li className="smud-nav__item">
           <Link to="#page-7" className="smud-nav__link" onClick={toggleMenu}>
-            Teams Live Event
+            Tilbakemelding
           </Link>
         </li>
       </ul>
