@@ -8,6 +8,7 @@ import stories from '../images/stories.png';
 
 import oyvindaass from '../images/oyvind.png';
 import annegundersen from '../images/annegundersen.png';
+import josteinemmerhoff from '../images/jostein.png';
 import christianfjestad from '../images/christianfjestad.png';
 import elisabethhaug from '../images/elisabethhaug.png';
 import kristineursfjord from '../images/kristineursfjord.png';
@@ -102,13 +103,13 @@ const IndexPage = (props) => (
                         <li className="smud-talks__item">
                             <div>
                                 <div className="smud-talks__speaker-image">
-                                    <img src={annegundersen} alt="Anne Gundersen" />
+                                    <img src={josteinemmerhoff} alt="Jostein Emmerhoff" />
                                 </div>
                             </div>
                             <div className="smud-talks__talk">
-                                <h3 className="smud-h3 smud-talks__talk-title">10.30 - 10.55: Verdifulle problemer</h3>
-                                <p className="smud-talks__speaker-name">Anne Gundersen</p>
-                                <p className="smud-talks__speaker-title">UX-Strateg i SpareBank 1 Utvikling</p>
+                                <h3 className="smud-h3 smud-talks__talk-title">10.30 - 10.55: Vi hadde forberedt oss i 8 år - så kom Covid-19</h3>
+                                <p className="smud-talks__speaker-name">Jostein Emmerhoff</p>
+                                <p className="smud-talks__speaker-title">Leder Digitalbankutvikling i SpareBank 1 Utvikling</p>
                             </div>
                         </li>
                         <li className="smud-talks__item">
