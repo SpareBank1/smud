@@ -256,16 +256,16 @@ const IndexPage = (props) => (
             <div className="smud-page__container">
                 <h2 className="smud-h2 smud-holdthedate">
                     <span>
-                        Årets smud er over! Takk for deltakelsen! Gi oss gjerne en tilbakemelding
+                        Årets smud er over! Heldigvis har vi opptak av konferansen :)
                     </span>
                 </h2>
                 <a href="https://www.pilot.intern.sparebank1.no/smud/" className="smud-register">
-                    Tilbakemelding
+                    Gjenopplev Smud
                 </a>
                 
                 <div className="smud-sb1-network">
                     <p>
-                        <span>PSST! Du må være på SpareBank 1 sitt nettverk for kunne gi tilbakemelding.</span>
+                        <span>PSST! Du må være på SpareBank 1 sitt nettverk for kunne gjenoppleve Smud.</span>
                         <span>Bruk derfor jobbmaskinen din med oppkoblet VPN.</span>
                     </p>
                     <p>
