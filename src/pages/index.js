@@ -7,7 +7,6 @@ import Smud from '../components/smud'
 import stories from '../images/stories.png';
 
 import oyvindaass from '../images/oyvind.png';
-import annegundersen from '../images/annegundersen.png';
 import josteinemmerhoff from '../images/jostein.png';
 import christianfjestad from '../images/christianfjestad.png';
 import elisabethhaug from '../images/elisabethhaug.png';
