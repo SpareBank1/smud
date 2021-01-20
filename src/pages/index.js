@@ -260,7 +260,7 @@ const IndexPage = (props) => (
                     </span>
                 </h2>
                 <a href="https://www.pilot.intern.sparebank1.no/smud/" className="smud-register">
-                    Gjenopplev Smud
+                    Gjenopplev
                 </a>
                 
                 <div className="smud-sb1-network">
